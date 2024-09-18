@@ -9,33 +9,15 @@ featured_image:
 layout: layouts/page.html
 permalink: /component-tester.html
 eleventyExcludeFromCollections: false
-hero:
-  _bookshop_name: sections/hero
-  content:
-    heading:
-      _bookshop_name: generic/heading
-      eyebrow_headline: A small business template
-      primary_heading: Empower your business with this brilliant template
-      eyebrow_headline_hierarchy: h3
-      primary_heading_hierarchy: h2
-    description: ''
-    button:
-      _bookshop_name: generic/button
-      url: '#services'
-      open_in_new_tab: false
-      text: Our services
-      variant: primary
-      arrow: right
-      onclick:
-    image:
-      _bookshop_name: generic/image
-      image_path: /assets/uploads/hero-background-feature.png
-      image_alt: Person wearing glasses and a beanie using a coffee machine
-      image_sizes:
-  styles:
-    image_alignment: full-background
-    color_group: primary
 content_blocks:
+  - _bookshop_name: bg-img-with-overlay
+    background_image:
+      image_path: https://placebear.com/1000/1000
+      image_alt: A bear
+    logo_image:
+      image_path: https://placebear.com/200/300
+      image_alt: A baby bear logo
+      position_left: 50
   - _bookshop_name: sections/image-cards
     content:
       id:
@@ -341,12 +323,4 @@ content_blocks:
     styles:
       color_group: secondary0
       image_alignment: right
-  - _bookshop_name: bg-img-with-overlay
-    background_image:
-      image_path: https://placebear.com/1000/1000
-      image_alt: A bear
-    logo_image:
-      image_path: https://placebear.com/200/300
-      image_alt: A baby bear logo
-      position_left: 50
 ---
